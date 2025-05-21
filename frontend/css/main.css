@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffaf2;
+}
+
+header {
+    background-color: #fff;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo span {
+    color: #ffa64d;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.btn-login {
+    background-color: #ffa64d;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    background-color: #ffbd86;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.profile-img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.explore-btn {
+    background-color: #ffa55c;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #ff9433;
+}
+
+.section-books {
+    padding: 3rem 4rem;
+    background-color: #fff7ed;
+}
+
+.section-books h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+}
+
+.book {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.library-showcase {
+    padding: 4rem 2rem;
+    background-color: #fdf1e3;
+    text-align: center;
+}
+
+.library-showcase h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.library-shelf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.shelf-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.book-spine {
+    width: 40px;
+    height: 100px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.shelf {
+    width: 100%;
+    max-width: 600px;
+    height: 10px;
+    background-color: #c08457;
+    border-radius: 5px;
+    margin-top: -10px;
+}

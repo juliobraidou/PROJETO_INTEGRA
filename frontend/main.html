@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyLibraryCo - Página Principal</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">MyLibrary<span>Co.</span></div>
+        <link rel="icon" type="image/png" href="img/icon.png">
+        <nav>
+            <a href="#sobre">Sobre-nos</a>
+            <a href="contato.html">Contato</a>
+            <button class="btn-login" onclick="location.href='login.html'">Conecte-se</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Bem-vindo à MyLibraryCo</h1>
+                <p>Explore milhares de livros digitais e descubra seu próximo favorito com um clique. Nosso acervo é
+                    atualizado por uma API de dados de livros.</p>
+                <button class="explore-btn" onclick="location.href='login.html'">Comece Agora</button>
+            </div>
+            <img class="profile-img" src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png"
+                alt="Pessoa lendo livro" />
+        </section>
+
+        <section class="section-books">
+            <h2>Recomendações do Dia</h2>
+            <div class="book-list" id="book-list">
+                <!-- Os livros da API serão carregados aqui via JS -->
+            </div>
+        </section>
+
+        <section class="library-showcase">
+            <h2>Explore Nossa Biblioteca</h2>
+            <div class="library-shelf">
+                <div class="shelf-row">
+                    <div class="book-spine" style="background-color: #ff8c42;"></div>
+                    <div class="book-spine" style="background-color: #fcbf49;"></div>
+                    <div class="book-spine" style="background-color: #90be6d;"></div>
+                    <div class="book-spine" style="background-color: #43aa8b;"></div>
+                    <div class="book-spine" style="background-color: #577590;"></div>
+                </div>
+                <div class="shelf"></div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const bookList = document.getElementById("book-list");
+
+            fetch("https://api.example.com/livros/recomendados")
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach(livro => {
+                        const bookItem = document.createElement("div");
+                        bookItem.className = "book";
+                        bookItem.innerHTML = `
+              <h3>${livro.titulo}</h3>
+              <p>${livro.autor}</p>
+            `;
+                        bookList.appendChild(bookItem);
+                    });
+                })
+                .catch(() => {
+                    bookList.innerHTML = "<p>Não foi possível carregar os livros. Tente novamente mais tarde.</p>";
+                });
+        });
+    </script>
+</body>
+
+</html>

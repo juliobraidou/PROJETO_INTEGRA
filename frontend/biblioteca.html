@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página do Usuário</title>
+    <link rel="icon" href="./img/icon.png" type="image/png" />
+    <link rel="stylesheet" href="./css/biblioteca.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <div class="background">
+        <header>
+          <button id="logoutBtn" class="logout">⬅ Sair</button>
+        </header>
+
+        <div class="content">
+          <div class="inner-container">
+            <div class="welcome-section">
+              <img
+                src="img/perfil.JPG"
+                alt="Foto de perfil"
+                class="profile-pic"
+                id="userProfilePic"
+              />
+              <input
+                type="file"
+                id="profileImageInput"
+                accept="image/*"
+                style="display: none"
+              />
+              <div class="text-block">
+                <h1>
+                  Seja bem-vindo <br />
+                  <span class="highlight" id="userName">Usuário</span>!
+                </h1>
+                <p class="subtext">Livros Registrados:</p>
+                <p class="quantity" id="bookQuantity">0</p>
+              </div>
+            </div>
+
+            <div class="books-section">
+              <h2>Meus Livros:</h2>
+              <div class="book-list" id="bookList">
+                <!-- Slots vazios -->
+                <div class="book-slot vazio"></div>
+                <div class="book-slot vazio"></div>
+                <div class="book-slot vazio"></div>
+                <div class="book-slot vazio"></div>
+
+                <!-- Botão de adicionar -->
+                <div class="add-book-container">
+                  <div class="add-book" id="openModalBtn">
+                    <span>+</span>
+                    <p>Adicionar livro</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      id="modal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
+      <div class="modal-content">
+        <span class="close" aria-label="Fechar modal">&times;</span>
+        <h2 id="modalTitle">Cadastrar Livro</h2>
+        <form id="bookForm">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+          <label for="autor">Autor:</label>
+          <input type="text" id="autor" name="autor" required />
+          <label for="genero">Gênero:</label>
+          <input type="text" id="genero" name="genero" required />
+          <label for="nota">Nota (0 a 10):</label>
+          <input
+            type="number"
+            id="nota"
+            name="nota"
+            min="0"
+            max="10"
+            step="0.1"
+            required
+          />
+          <label for="comentario">Comentário:</label>
+          <textarea
+            id="comentario"
+            name="comentario"
+            rows="4"
+            maxlength="255"
+            required
+          ></textarea>
+          <label for="capa">Capa do Livro:</label>
+          <input type="file" id="capa" name="capa" accept="image/*" />
+          <button type="submit">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal de detalhes -->
+    <div id="bookDetailsModal" class="modal">
+      <div class="modal-content">
+        <span class="close-details">&times;</span>
+        <h2 id="modalTitulo"></h2>
+        <p><strong>Autor:</strong> <span id="modalAutor"></span></p>
+        <p><strong>Gênero:</strong> <span id="modalGenero"></span></p>
+        <p><strong>Nota:</strong> <span id="modalNota"></span></p>
+        <p><strong>Comentário:</strong></p>
+        <p id="modalComentario"></p>
+        <img
+          id="modalCapa"
+          src=""
+          alt="Capa do livro"
+          style="max-width: 200px; margin-top: 10px"
+        />
+      </div>
+    </div>
+
+    <script src="./js/script_biblioteca.js"></script>
+  </body>
+</html>

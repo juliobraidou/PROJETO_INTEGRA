@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyLibrary Co.</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="hero">
+    <div class="container">
+      <header class="header">
+        <div class="logo">MyLibrary<span>Co.</span></div>
+        <nav id="navbar">
+          <a href="#sobre">Sobre-nós</a>
+          <a href="#contato">Contato</a>
+          <button class="btn-primary" onclick="window.location.href='login.html'">Conecte-se</button>
+        </nav>
+      </header>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Sua Biblioteca Digital,<br><span>Onde e Quando Quiser</span></h1>
+          <p>Acesse livros, cadastre-se, organize seu acervo digital</p>
+          <button class="btn-primary" onclick="window.location.href='login.html'">Explorar Livros</button>
+        </div>
+        <img src="img/livros.png" alt="Livros" class="hero-img" />
+      </div>
+    </div>
+  </section>
+
+    <section class="cards">
+      <div class="card">
+        <img src="img/card1.png" alt="Livro" />
+        <h3>Acesso a Livros Digitais</h3>
+        <p>Leia a qualquer momento e lugar!</p>
+      </div>
+      <div class="card">
+        <img src="img/card2.png" alt="Livro" />
+        <h3>Cadastro e organização</h3>
+        <p>Crie e gerencie sua coleção digital!</p>
+      </div>
+      <div class="card">
+        <img src="img/card3.png" alt="Livro" />
+        <h3>Busca inteligente dos títulos</h3>
+        <p>Encontre tudo com facilidade!</p>
+      </div>
+      <div class="card">
+        <img src="img/card4.png" alt="Livro" />
+        <h3>Compartilhe com seus amigos!</h3>
+        <p>Conecte opiniões e feedbacks!</p>
+      </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+  <div class="container sobre-container">
+    <div class="sobre-text">
+      <h2>Sobre <strong>Nos<span class="dot">.</span></strong></h2>
+      <p>
+        Na MyLibrary Co., acreditamos que o acesso ao conhecimento deve ser fácil, rápido e para todos.<br />
+        Criamos uma plataforma moderna de biblioteca digital onde você pode explorar, cadastrar e organizar livros de forma intuitiva e segura.
+      </p>
+      <button class="btn-primary" onclick="window.location.href='login.html'">Explorar Livros</button>
+    </div>
+    <div class="sobre-img-wrapper">
+      <img src="img/lendo.png" alt="Pessoa lendo" class="sobre-img" />
+    </div>
+  </div>
+</section>
+
+
+    <section id="contato" class="contato">
+      <div class="contato-wrapper">
+        <div class="contato-info">
+          <h2>Nos envie<br />uma mensagem<span>!</span></h2>
+          <ul>
+            <li>
+              <svg width="20" height="20" fill="#f9a856" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"
+                />
+              </svg>
+              Local, 433, Sei lá, São Paulo - SP
+            </li>
+            <li>
+              <svg width="20" height="20" fill="#f9a856" viewBox="0 0 24 24">
+                <path
+                  d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1.004 1.004 0 0 1 1.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 0 1 1 1v3.25a1 1 0 0 1-1 1C10.49 22 2 13.51 2 3.75a1 1 0 0 1 1-1H6.25a1 1 0 0 1 1 1c0 1.35.27 2.67.76 3.88a1.004 1.004 0 0 1-.21 1.11l-2.18 2.2z"
+                />
+              </svg>
+              +55 19 3333-6666
+            </li>
+            <li>
+              <svg width="20" height="20" fill="#f9a856" viewBox="0 0 24 24">
+                <path
+                  d="M12 8a1 1 0 0 1 1 1v3.27l2.42 1.45a1 1 0 0 1-.84 1.79l-3.08-1.85A1 1 0 0 1 11 13V9a1 1 0 0 1 1-1zm0-6a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2z"
+                />
+              </svg>
+              Segunda a Sexta - 9 às 18
+            </li>
+          </ul>
+        </div>
+        <form class="contato-form">
+          <input type="text" placeholder="Nome" required />
+          <input type="tel" placeholder="Telefone" required />
+          <textarea
+            rows="4"
+            placeholder="Escreva sua mensagem..."
+            required
+          ></textarea>
+          <button class="btn-primary" type="submit">Send the Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-columns">
+          <div class="footer-brand">
+            <strong>MyLibrary Co.</strong>
+            <p>Sua plataforma para leitura e organização de livros digitais;</p>
+          </div>
+          <div class="footer-links">
+            <p><strong>Links Rápidos</strong></p>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#contato">Contato</a>
+          </div>
+          <div class="footer-social">
+            <p><strong>Siga a gente!</strong></p>
+            <!-- Substitua com ícones reais se quiser -->
+            <a href="#">Instagram</a><br />
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <p class="footer-copy">
+          © 2025 MyLibrary Co. - Todos os direitos reservados
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

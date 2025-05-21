@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffaf2;
+}
+
+header {
+    background-color: #fff;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo span {
+    color: #ffa64d;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #ffa64d;
+}
+
+.contact-container {
+    max-width: 1000px;
+    background-color: #fefcf6;
+    margin: 60px auto;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+.contact-info h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.dot {
+    color: #ffa64d;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin: 15px 0;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 12px;
+    background-color: transparent;
+    resize: none;
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.contact-form textarea:focus {
+    border-color: #ffa64d;
+}
+
+.contact-form button {
+    background-color: #ffa64d;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ff9230;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+}

@@ -1,0 +1,15 @@
+// LOGIN
+{
+  "email": "testedasilva2@gmail.com",
+  "senha": "1234"
+}
+
+// POST LIVROS AUTORIZADOS COM TOKEN
+
+{
+  "titulo": "",
+  "autor": "",
+  "genero": "",
+  "nota": ,
+  "capa": "
+}
