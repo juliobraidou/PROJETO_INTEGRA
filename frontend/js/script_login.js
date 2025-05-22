@@ -17,10 +17,9 @@ document
 
       if (response.ok) {
         localStorage.setItem("usuarioLogado", JSON.stringify(data.usuario));
-        localStorage.setItem("token", data.token); // ✅ adiciona o token
+        localStorage.setItem("token", data.token);
 
-        alert("Login realizado com sucesso!");
-        window.location.href = "biblioteca.html"; // ✅ redireciona
+        window.location.href = "biblioteca.html";
       } else {
         alert(data.error || "Erro ao fazer login.");
       }
@@ -31,7 +30,7 @@ document
 
 document.addEventListener("DOMContentLoaded", function () {
   const eyeIcon = document.querySelector(".eye-icon");
-  const passwordInput = document.querySelector('input[type="password"]');
+  const passwordInput = document.getElementById("login-senha");
 
   eyeIcon.addEventListener("click", () => {
     const isPassword = passwordInput.type === "password";

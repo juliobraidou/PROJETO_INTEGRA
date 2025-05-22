@@ -34,7 +34,7 @@ const AuthController = {
 
     UsuarioModel.buscarPorEmail(email, async (err, results) => {
       if (err) return res.status(500).json({ error: 'Erro ao consultar usuário.' });
-      if (results.length === 0) return res.status(401).json({ error: 'Usuário não encontrado.' });
+      if (results.length === 0) return res.status(401).json({ error: 'Usuario não encontrado.' });
 
       const usuario = results[0];
       const senhaValida = await bcrypt.compare(senha, usuario.senha);

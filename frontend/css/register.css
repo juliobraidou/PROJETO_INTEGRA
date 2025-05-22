@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+.register-page {
+  height: 100vh;
+  background: url("../img/walp.png") no-repeat top center;
+  background-size:  cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+} 
+
+.voltar {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  text-decoration: none;
+  color: #b35400;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.register-box {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 14px;
+  width: 380px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.register-box h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  color: #111;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 14px 14px 42px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+.icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  fill: #aaa;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+  color: #999;
+}
+
+.btn-register {
+  width: 100%;
+  background-color: #f9a856;
+  color: #834611;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-register:hover {
+  background-color: #f89c3b;
+}
+
+.register {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.register a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.voltar {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #b35400;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.voltar svg {
+  transition: transform 0.3s ease;
+}
+
+.voltar:hover {
+  color: #8a3c00;
+}
+
+.voltar:hover svg {
+  transform: translateX(-4px);
+}

@@ -75,6 +75,11 @@ nav a {
 
 .btn-primary:hover {
   background-color: #f89c3d;
+  box-shadow: 0 4px 12px rgba(249, 168, 86, 0.4);
+  transition: background-color 0.3s ease;
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
+
 }
 
 .hero-content {
@@ -285,7 +290,16 @@ nav a {
   gap: 30px;
   text-align: center;
 }
-
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 1px solid #f9a856;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff; 
+}
 .card {
   background-color: #fff;
   border: 1px solid #eee;

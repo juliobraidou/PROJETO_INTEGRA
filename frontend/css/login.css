@@ -1,0 +1,221 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html, body {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Layout geral */
+.login-page {
+  display: flex;
+  height: 100vh;
+}
+
+/* Lado esquerdo (cards) */
+.login-left {
+  flex: 1;
+  background-color: #f89c3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.card {
+  height: 240px;
+  background: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.card svg {
+  width: 80px !important;
+  height: 80px !important;
+  color: #f89c3d;
+  display: block; /* evita espaçamento estranho */
+  margin: 0 auto 16px auto;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img, .card svg {
+  width: 40px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.card p {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Lado direito (formulário) */
+.login-right {
+  flex: 1;
+  background: url('../img/walp.png') no-repeat top center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.voltar {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  text-decoration: none;
+  color: #444;
+  font-size: 1.1rem;
+}
+
+/* Box de login */
+.login-box {
+  background: white;
+  width: 380px;
+  padding: 50px 40px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Inter', sans-serif;
+}
+
+.login-box h2 {
+  font-size: 26px;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+/* Campos de entrada */
+.input-group {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 40px 14px 40px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  fill: #aaa;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+  color: #999;
+}
+
+/* Botões */
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f9a856;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ddd;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Link inferior */
+.forgot {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
+}
+
+.btn-login {
+  color: #834611;
+}
+
+.btn-login:hover {
+  background-color: #f89c3d;
+  
+}
+
+.btn-secondary {
+  color: #834611;
+}
+.btn-secondary:hover {
+  background-color: #ccc;
+}
+
+.voltar {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #b35400;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.voltar svg {
+  transition: transform 0.3s ease;
+}
+
+.voltar:hover {
+  color: #8a3c00;
+}
+
+.voltar:hover svg {
+  transform: translateX(-4px);
+}
