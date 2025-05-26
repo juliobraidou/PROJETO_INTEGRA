@@ -18,3 +18,20 @@ Interface simples e amigável
 Avaliação dos livros com notas de 1 a 10
 
 Organização personalizada da biblioteca pessoal
+
+
+Como rodar o projeto
+
+Clone este repositório:
+git clone https://github.com/seuusuario/MyLibrary.Co.git
+
+
+Navegue até a pasta do projeto:
+cd MyLibrary.Co
+
+
+Instale as dependências (se houver backend com Node.js):
+npm install
+
+Execute o servidor:
+node server.js
